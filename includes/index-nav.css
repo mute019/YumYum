@@ -1,0 +1,193 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+/*Navigation Section*/
+
+.header a {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.header img{
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header img, h1 {
+    margin: 0 5px;
+}
+
+.header h1 {
+    color: seashell;
+}
+
+nav {
+
+    height: 80px;
+    background-color: #1b1b1b;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    padding-right: 35px;
+}
+
+.nav-items {
+    position: absolute;
+    background-color: black;
+    top: 80px;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    overflow: none;
+}
+
+.nav-slide-open {
+    left: 0px;
+    transition: left ease-out 0.5s;
+}
+
+.nav-slide-hide {
+    left: -1080px;
+    transition: left ease-in 0.5s;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+nav ul li {
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: cyan;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Close and Menu Button*/
+.close-btn {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    padding-right: 35px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.close-btn i {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    color:cyan;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+nav .menu-bttn {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.menu-bttn i {
+    color: cyan;
+    margin-top: 11px;
+    /* padding-top: 12px; */
+}
+
+
+.close-btn:hover i {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(253, 250, 250, 0.2);
+} 
+
+.menu-bttn:hover {
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(253, 250, 250, 0.2);
+}
+
+/*Hover Effect*/
+
+.list_container li:hover a {
+    background-color: cyan;
+    color: #1b1b1b;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+li.activ, .activ a {
+    background-color: cyan;
+    color: #1b1b1b;
+    border-radius: 10px;
+}
+
+/*  */
+
+/* Media Queries */
+
+@media screen and (min-width: 1080px){
+    nav {
+        padding-left: 200px;    
+    }
+    .nav-items {
+        position: relative;
+        background-color: #1b1b1b;
+        height: 80px;
+        width: 70%;
+        left: 10px;
+        top: -20px;
+    }
+
+    nav ul {
+        position: relative;
+        top: 0px;
+        margin-top: 0px;
+        flex-direction: row;
+        height: 80px;
+    }
+
+    .close-btn, div.menu-bttn {
+        display: none;
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav ul li {
+        margin: 0px 5px;
+        width: 130px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,277 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.Booking-section {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 24px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 340px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+
+
+.Booking-section h1 {
+    font-weight: bold;
+    color: orangered;
+}
+
+.Booking-section p {
+    padding-left: 2px;
+}
+
+.Booking-section form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.bk_and_abt {
+    padding: 0px 10px;
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Booking-section form input[type=text], input[type=date] {
+    height: 40px;
+    width: 320px;
+    margin: 10px 0px;
+    padding: 0px 5px;
+    border: 2px solid cornflowerblue;
+}
+
+.Booking-section form input[type=text], input[type=date] {
+    
+    border-radius: 6px;
+}
+
+.Booking-section form input[type=date] {
+    width: 160px;
+}
+
+input[type=submit] {
+    height: 40px;
+    width: 320px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: limegreen;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.bk_and_abt form select, option {
+    width: 320px;
+    height: 40px;
+}
+
+/* 
+    About Section
+*/
+
+.about-section {
+    height: 400px;
+    box-shadow: 0px 0px 24px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    width: 340px;
+}
+
+.about-section article div {
+    color: orangered;
+}
+
+.about-section article {
+    padding: 10px;
+}
+
+.about-section p {
+    margin-left: 5px;
+}
+
+.about-section img {
+    width: 320px;
+    margin: 60px 10px;
+}
+
+/*
+    Error Container
+*/
+
+.Booking-section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:red;
+}
+
+/*
+    Last Section
+*/
+
+.last-section {
+    
+    padding: 20px;
+    background-color: #1a1819;
+}
+
+.card {
+    padding: 20px;
+    border: 2px solid whitesmoke;
+    background-color: #1a1819;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.card article h4 {
+    color: orangered;
+    font-weight: bold;
+}
+
+.card article p {
+    text-align: justify;
+    color:whitesmoke;
+}
+
+.card img {
+    margin: 40px 0px;
+    width: 100px;
+}
+
+/* 
+    Media Queries
+*/
+
+@media screen and (min-width: 400px) {
+    .bk_and_abt {
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section {
+        width: 400px;
+        padding: 20px;
+    }
+
+    .Booking-section {
+        width: 400px;
+        padding: 40px;
+    }
+
+    .last-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .bk_and_abt {
+        padding: 0px 80px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-section {
+        margin: 0px;
+        margin-top: -100px;
+        height: 400px;
+    }
+
+    .last-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .bk_and_abt {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 20px;
+        margin: 60px 10px;
+    }
+
+    .about-section {
+        margin: 0px;
+        width: 600px;
+        height: 550px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+
+    .bk_and_abt img {
+        width: 450px;
+    }
+    
+
+    .last-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 0px 20px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .bk_and_abt {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 150px;
+    }
+
+
+    .Booking-section {
+        margin: 0px;
+    }
+
+    
+    .about-section {
+        width: 700px;
+        height: 550px;
+        
+        margin: 0px 20px;
+        margin-top: 50px;
+        padding: 20px;
+
+    }
+
+    .about-section h1 {
+        font-size: 40px;
+    }
+
+    .about-section img {
+        width: 450px;
+        margin-left: 100px;
+    }
+
+}
+

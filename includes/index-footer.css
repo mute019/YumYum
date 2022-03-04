@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/*footer background setting*/
+
+footer {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.smartshanghai.com%2Fuploads%2Farticles%2F2019%2Fsmsh1561370678.jpg&f=1&nofb=1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+footer .container {
+    background: rgba(15, 13, 13, 0.8);
+    padding: 5px;
+}
+
+/*Contact Description*/
+
+.contact-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-about h1, .contact-about p {
+    color: whitesmoke;
+}
+
+.contact-about p {
+    padding: 20px;
+    text-align: justify;
+}
+
+/*Address and form section*/
+
+.add-and-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Address Section*/
+
+.address-section {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.location-container, .phone-container, .email-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.gps-icon, .phone-icon, .email-icon {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0px 25px;
+    font-size: 22px;
+    background-color: whitesmoke;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.address-section i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.address-section p {
+    text-align: justify;
+    width: 200px;   
+}
+
+.cont-address, .contact-number, .email-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.address-section p {
+    color: whitesmoke;
+}
+
+/* Contact Form*/
+
+.contact-form-section {
+    padding: 45px;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px 18px;
+    width: 360px;
+}
+
+.contact-form-section input[type=text], input[type=email]{
+    width: 320px;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid rgba(48, 45, 45, 0.8);
+}
+
+.contact-form-section input[type=text]:focus, input[type=email]:focus {
+    outline: none!important;
+}
+
+.contact-form-section textarea{
+    width: 320px;
+    margin: 5px 0px;
+    padding: 20px 15px;
+    border: none;
+    height: 150px;
+    border-bottom: 2px solid rgba(48, 45, 45, 0.8);
+    resize: none;
+}
+
+.contact-form-section textarea {
+    outline: none!important;
+}
+
+.contact-form-section input[type=submit] {
+    width: 320px;
+    margin: 5px 0px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}
+
+.contact-form-section input[type=submit]:hover {
+    color: white;
+    background-color: limegreen;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+/*big dash*/
+
+.social-media-section {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-ico a {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-ico a h1 {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.footer-ico img{
+    height: 30px;
+    border-radius: 50%;
+}
+
+.copyright p {
+    color: whitesmoke;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-container i {
+    font-size: 25px;
+    margin: 10px 15px;
+    color: whitesmoke;
+}
+
+.social-container i:hover {
+    color: chartreuse;
+    transition: color 0.3s ease-in;
+}
+
+@media screen and (min-width: 468px){
+    .add-and-form {
+        padding: 0px 280px;
+    }
+}
+
+@media screen and (min-width: 1080px){
+
+    /*contact about section*/
+    .contact-about p {
+        width: 900px;
+    }
+
+    /*address section edit*/
+    .address-section {
+        padding-top: 100px;
+    }
+    /*form section*/
+    .add-and-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+        padding: 0px 100px;
+    }
+
+    /*social media*/
+
+    .social-media-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (min-width: 1080px){
+
+    .add-and-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+        padding: 0px 300px;
+    }
+
+}
+
+
+
